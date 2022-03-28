@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Resume</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_new_resume">create new resume</string>
+    <string name="update_exciting_resume">update exciting resume</string>
+    <string name="share_as_pdf">share as PDF</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Residence address</string>
+    <string name="continue_button">Continue</string>
+    <string name="career_objective">Career Objective</string>
+    <string name="total_years_of_experience">Total years of experience</string>
+    <string name="add_skill">Add skill</string>
+    <string name="skill">Skill</string>
+</resources>

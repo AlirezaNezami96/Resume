@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="alireza.nezami.resume.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_resmueFragment"
+            app:destination="@id/resmueFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_basicInfoFragment"
+            app:destination="@id/basicInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_careerFragment"
+            app:destination="@id/careerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicInfoFragment"
+        android:name="alireza.nezami.resume.presentation.basic.BasicInfoFragment"
+        android:label="fragment_basic_info"
+        tools:layout="@layout/fragment_basic_info">
+
+        <action
+            android:id="@+id/action_basicInfoFragment_to_careerFragment"
+            app:destination="@id/careerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/careerFragment"
+        android:name="alireza.nezami.resume.presentation.career.CareerFragment"
+        android:label="fragment_career"
+        tools:layout="@layout/fragment_career">
+
+    </fragment>
+    <fragment
+        android:id="@+id/workFragment"
+        android:name="alireza.nezami.resume.presentation.works.WorkFragment"
+        android:label="fragment_work"
+        tools:layout="@layout/fragment_work">
+        <action
+            android:id="@+id/action_workFragment_to_educationFragment"
+            app:destination="@id/educationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="alireza.nezami.resume.presentation.education.EducationFragment"
+        android:label="fragment_education"
+        tools:layout="@layout/fragment_education">
+        <action
+            android:id="@+id/action_educationFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="alireza.nezami.resume.presentation.projects.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" />
+    <fragment
+        android:id="@+id/resmueFragment"
+        android:name="alireza.nezami.resume.ResmueFragment"
+        android:label="fragment_resmue"
+        tools:layout="@layout/fragment_resmue" />
+</navigation>

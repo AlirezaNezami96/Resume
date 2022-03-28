@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="alireza.nezami.resume.presentation.home.HomeViewModel" />
+    </data>
+
+    <FrameLayout
+        style="@style/Theme.DarkTheme"
+        android:layout_width="match_parent"
+        tools:context=".presentation.home.HomeFragment"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme.Button"
+                android:onClick="@{() -> viewModel.onCreateNew()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/create_new_resume" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme.Button"
+                android:onClick="@{() -> viewModel.onUpdateExciting()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/update_exciting_resume" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/Theme.Button"
+                android:onClick="@{() -> viewModel.onSharePDF()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/share_as_pdf" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>
